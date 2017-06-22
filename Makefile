@@ -1,8 +1,14 @@
 DESTDIR := /tmp/libretro-core-info
 
-all:
-	@echo "Nothing to make for libretro-core-info."
+all: libretro-super
+	@echo "Checked out latest from libretro-super."
 
-install:
+libretro-super:
+	./configure
+
+install: all
 	mkdir -p $(DESTDIR)
-	cp -ar *.info $(DESTDIR)
+	cp -ar libretro-super/dist/info/*.info $(DESTDIR)
+
+clean:
+	rm -rf libretro-super
