@@ -2,4 +2,4 @@
 
 PACKAGE_NAME=libretro-core-info
 
-git clone --depth=1 https://github.com/libretro/libretro-super.git
+git clone --depth=1 https://github.com/libretro/libretro-super.git libretro-super
